@@ -1,0 +1,60 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#about {
+  background-color: #ecd078;
+  opacity: 0.9;
+  font-size: 1.2em;
+  text-align: center;
+  height: 200px;
+  padding-top: 20px;
+
+  .resume {
+    font-size: 1.2em;
+    a, a:visited, a:hover {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}
+
+#projects {
+  background-color: #D95B43;
+  opacity: 0.9;
+  font-size: 1.2em;
+  text-align: center;
+  height: 200px;
+
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    margin-top: 20px;
+
+    color: #000000;
+    font-size: 1.3em;
+
+    li {
+
+      a:link, a:visited {
+        opacity: 1;
+        display: block;
+        padding: 5px 5px 5px 5px;
+        text-decoration: none;
+        color: #ecd078;
+      }
+      a:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+#social {
+
+}
+
+#contact {
+
+}

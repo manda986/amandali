@@ -1,0 +1,79 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+
+}
+
+.section {
+  display: block;
+  margin: 0 auto;
+  width: 800px;
+  height: 500px;
+  padding: 0;
+  border-top: 2px solid #C02942;
+}
+
+#home {
+  border-top: none;
+  background-image: url('amanda.jpg');
+
+  h1 {
+    font-family: "Arial Black", sans-serif;
+    color: #53777A;
+    opacity: 0.9;
+    font-size: 3em;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 20px;
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    color: #D95B43;
+    font-size: 1.5em;
+    text-align: right;
+    margin-top: -20px;
+    padding-right: 20px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+
+  ul#menu {
+    width: 325px;
+    background-color: #53777A;
+    z-index:99;
+    list-style-type: none;
+    padding-right: 20px;
+    margin: 0px;
+    margin-top: 20px;
+    float:right;
+    color: #ECD078;
+    font-size: 1.3em;
+
+    li {
+      float:left;
+      opacity: 1;
+
+      a:link, a:visited {
+        opacity: 1;
+        display: block;
+        padding: 5px 5px 5px 5px;
+        text-decoration: none;
+        color: #ECD078;
+      }
+      a:hover {
+        color: #D95B43;
+      }
+    }
+  }
+
+}
