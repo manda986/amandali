@@ -1,25 +1,46 @@
 <div id="about" class="section">
+  <h3>About</h3>
   <p>Hi there! I am a passionate software developer living in NYC.</p>
   <p>My past work has taken me into government, investment banking, and startups.</p>
   <p>I'm a Cornell University alumna and received my B.S. in Information Science Systems and Technology</p>
-  <p>I enjoy working in small teams to solve challenging technical problems</p>
   <p>My coding expertise includes Ruby on Rails, Javascript, Java, C++, and PHP</p>
+  <p>I enjoy working in small teams to solve challenging technical problems</p>
   <p>I love to learn and intend to do so throughout my career.</p>
-  <button class="resume"><a href="/Amanda_Li_resume.pdf">Download Resume</a></button>
+  <a href="/Amanda_Li_resume.pdf" class="btn btn-default">Download Resume</a>
 </div>
 
 <div id="projects" class="section">
+  <h3>Projects</h3>
   <ul>
     <li>RosterReady: a web app to manage dragon boat paddler rosters</li>
     <li><a href="http://puffpuffdragons.com" target="_blank">Puff Puff Dragon Boat Club</a></li>
-    <li>Amanda.Li: this site!</li>
+    <li><a href="https://github.com/manda986/amandali" target="_blank">Github: AmandaLi - this site!</a></li>
   </ul>
 </div>
 
-<div id="social" class="section">
-  social
-</div>
+<div class="row-center">
 
-<div id="contact" class="section">
-  contact
+  <div id="social" class="col-md-6">
+    <h3>Social</h3>
+    <ul>
+      <li><a href="http://facebook.com/amandajli" target="_blank"><%= image_tag "glyphicons_social/png/glyphicons_social_30_facebook.png", :class => "icon" %></a></li>
+      <li><a href="http://twitter.com/manda_li" target="_blank"><%= image_tag "glyphicons_social/png/glyphicons_social_31_twitter.png", :class => "icon" %></a></li>
+      <li><a href="http://instagram.com/amanda_li8" target="_blank"><%= image_tag "glyphicons_social/png/glyphicons_social_32_instagram.png", :class => "icon" %></a></li>
+      <li><a href="http://github.com/manda986" target="_blank"><%= image_tag "glyphicons_social/png/glyphicons_social_21_github.png", :class => "icon" %></a></li>
+      <li><a href="http://linkedin.com/in/amandajli/" target="_blank"><%= image_tag "glyphicons_social/png/glyphicons_social_17_linked_in.png", :class => "icon" %></a></li>
+
+    </ul>
+
+  </div>
+
+  <div id="contact" class="col-md-6">
+    <h3>Contact</h3>
+    <form class="col-sm-2">
+      <input type="text" class="form-control" placeholder="Email address" autofocus>
+      <input type="text" class="form-control" placeholder="Message">
+
+      <button class="btn btn-primary btn-block" type="submit">Email me</button>
+    </form>
+  </div>
+
 </div>
