@@ -11,6 +11,10 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 14px;
 
+  //fixed navbar
+  min-height: 2000px;
+  padding-top: 70px;
+
 }
 
 .section {
@@ -27,8 +31,7 @@ body {
   background-image: url(<%= asset_path 'amanda.jpg' %>);
 
   h1 {
-    font-family: "Arial Black", sans-serif;
-    color: #53777A;
+    color: #000000; //#53777A;
     opacity: 0.9;
     font-size: 3em;
     text-align: right;
@@ -38,7 +41,7 @@ body {
   }
 
   h2 {
-    color: #D95B43;
+    color: #000000; //#D95B43;
     font-size: 1.5em;
     text-align: right;
     margin-top: -10px;
@@ -46,43 +49,24 @@ body {
     letter-spacing: 1px;
     opacity: 0.9;
   }
-
-  ul#menu {
-    width: 400px;
-    background-color: #53777A;
-    border-radius: 3px;
-    z-index:99;
-    list-style-type: none;
-    padding-right: 20px;
-    margin: 0px;
-    margin-top: 20px;
-    float:right;
-    color: #ECD078;
-    font-size: 1.3em;
-
-    li {
-      float:left;
-      opacity: 1;
-
-      a:link, a:visited {
-        opacity: 1;
-        display: block;
-        padding: 5px 5px 5px 5px;
-        text-decoration: none;
-        color: #ECD078;
-      }
-      a:hover {
-        color: #D95B43;
-      }
-    }
-  }
 }
 
 h3 {
-            padding: 0;
-            margin: 5px;
+  padding: 0;
+  margin: 5px;
   font-size: 1.3em;
   font-weight: bold;
   font-family: "Arial Black", sans-serif;
   color: #53777A;
+}
+
+#footer {
+  background-color: #53777A;
+  opacity: 0.9;
+  font-size: 1.2em;
+  text-align: center;
+  height: 50px;
+  padding-top: 20px;
+  width: 800px;
+  margin: 0 auto;
 }

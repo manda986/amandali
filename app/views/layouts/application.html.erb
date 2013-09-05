@@ -4,25 +4,56 @@
   <title>Amanda Li</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <script>
+     $(function() {
+        $('.nav li').click(function() {
+           $('.nav li').removeClass();
+           $(this).addClass('active');
+        });
+     });
+  </script>
   <%= csrf_meta_tags %>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 
 <%= render 'layouts/messages' %>
 
+  <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Amanda Li</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#social">Social</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
   <div id="home" class="section">
     <h1>Amanda Li</h1>
     <h2>//developer with an appetite</h2>
-    <ul id="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#social">Social</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
   </div>
 
 <%= yield %>
+
+  <div id="footer">
+    Photo taken by <a href="http://jamesransom.com/">James Ransom</a>
+  </div>
 
 </body>
 </html>
