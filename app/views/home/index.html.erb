@@ -35,12 +35,16 @@
 
   <div id="contact" class="col-md-6">
     <h3>Contact</h3>
-    <form class="col-sm-2">
-      <input type="text" class="form-control" placeholder="Email address" autofocus>
-      <input type="text" class="form-control" placeholder="Message">
+    <form class="row" action="/contact_submit" method="get">
 
+      <input type="text" name="email" class="form-control col-md-4" placeholder="Email address" autofocus>
+      <input type="text" name="message" class="form-control col-md-4" placeholder="Message">
+
+      <input type="text" name="foo" style="display: none;"> <!-- prevent spam -->
       <button class="btn btn-primary btn-block" type="submit">Email me</button>
+
     </form>
   </div>
+
 
 </div>
