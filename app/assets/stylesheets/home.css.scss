@@ -34,7 +34,7 @@
     margin-top: 10px;
 
     color: #000000;
-    font-size: 1.3em;
+    font-size: 1.1em;
 
     li {
 
@@ -56,10 +56,9 @@
   display:block;
   margin: 0 auto;
   width: 800px;
-  height: 200px;
-
-
+  height: auto;
 }
+
 #social {
   background-color: #ecd078;
   opacity: 0.9;
@@ -72,9 +71,7 @@
   ul {
     list-style-type: none;
     display:block;
-
     width: 400px;
-
 
     li {
         display:block;
@@ -100,6 +97,7 @@
   border-top: 2px solid #C02942;
 
   form {
-    width: 400px;
+  //      float: left;
+  //      clear:both;
   }
 }
