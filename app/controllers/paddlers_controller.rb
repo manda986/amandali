@@ -2,12 +2,21 @@ class PaddlersController < ApplicationController
 
   def get_paddlers
     @paddlers = Paddler.all
-    render json: @paddlers
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   def get_paddler
     @paddler = Paddler.find(params[:id])
     render json: @paddler
   end
+
+  def roster_ready
+    render :layout => false
+
+  end
+
 
 end

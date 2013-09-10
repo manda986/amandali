@@ -14,6 +14,7 @@ Amandali::Application.routes.draw do
 
   get '/api/get_paddlers' => 'paddlers#get_paddlers'
   get '/api/get_paddler/:id' => 'paddlers#get_paddler'
+  get '/roster_ready' => 'paddlers#roster_ready'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
