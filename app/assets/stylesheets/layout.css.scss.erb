@@ -2,9 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$yellow: #ecd078;
+$green: #53777A;
+$charcoal: #39393b;
+
+@font-face {
+  font-family: 'Born';
+  src: url(<%= asset_path 'Born.otf' %>);
+}
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Born", sans-serif;
   font-size: 14px;
 
   //fixed navbar
@@ -19,7 +27,7 @@ body {
   width: 800px;
   height: 500px;
   padding: 0;
-  border-top: 2px solid #C02942;
+  border-top: 2px solid $green;
 
   //clear out active admin styling
   -webkit-border-radius: 0px;
@@ -32,10 +40,10 @@ body {
   h3 {
     padding: 0;
     margin: 5px;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: bold;
-    font-family: "Arial Black", sans-serif;
-    color: #53777A;
+    font-family: "Born", sans-serif;
+    color: $green;
 
     //clear out active admin styling
     background: none;
@@ -53,23 +61,26 @@ body {
   background-image: url(<%= asset_path 'amanda.jpg' %>);
 
   h1 {
-    color: #000000; //#53777A;
+    color: $charcoal;
     opacity: 0.9;
     font-size: 3em;
+    font-weight: bold;
     text-align: right;
     padding-top: 20px;
     padding-right: 20px;
     letter-spacing: 1px;
+    font-family: "Born", serif;
   }
 
   h2 {
-    color: #000000; //#D95B43;
+    color: $charcoal;
     font-size: 1.5em;
     text-align: right;
     margin-top: -10px;
     padding-right: 20px;
     letter-spacing: 1px;
     opacity: 0.9;
+    font-family: "Born", serif;
   }
 }
 
@@ -78,13 +89,13 @@ h3 {
   margin: 5px;
   font-size: 1.3em;
   font-weight: bold;
-  font-family: "Arial", sans-serif;
-  color: #53777A;
+  font-family: "Born", sans-serif;
+  color: $green;
   background: auto;
 }
 
 #footer {
-  background-color: #53777A;
+  background-color: $green;
   opacity: 0.9;
   font-size: 1.2em;
   text-align: center;
