@@ -9,10 +9,7 @@
 
   <title>Amanda Li</title>
 
-  <%= stylesheet_link_tag    "bootstrap" %>
-  <%= stylesheet_link_tag    "bootstrap-theme" %>
-  <%= stylesheet_link_tag    "home" %>
-  <%= stylesheet_link_tag    "layout" %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%#= stylesheet_link_tag    "normalize" %>
   <%#= stylesheet_link_tag    "style" %>
 
@@ -72,8 +69,7 @@
 
 </div>
 
-<%= javascript_include_tag "jquery-1.9.1" %>
-<%= javascript_include_tag "bootstrap" %>
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 
 </body>
 </html>
