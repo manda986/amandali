@@ -2,9 +2,20 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amanda Li">
+  <meta name="author" content="Amanda Li">
+
   <title>Amanda Li</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+  <%= stylesheet_link_tag    "bootstrap" %>
+  <%= stylesheet_link_tag    "bootstrap-theme" %>
+  <%= stylesheet_link_tag    "home" %>
+  <%= stylesheet_link_tag    "layout" %>
+  <%= stylesheet_link_tag    "normalize" %>
+  <%= stylesheet_link_tag    "style" %>
+
   <script>
      $(function() {
         $('.nav li').click(function() {
@@ -45,16 +56,25 @@
       </div>
     </div>
 
-  <div id="home" class="section">
-    <h1>Amanda Li</h1>
-    <h2>//developer with an appetite</h2>
+  <div class="container">
+
+    <div id="home">
+        <h1>Amanda Li</h1>
+        <h2>//developer with an appetite</h2>
+        <%= image_tag "amanda.jpg" %>
+    </div>
+
+    <%= yield %>
+
+    <div id="footer">
+      Photo taken by <a href="http://jamesransom.com/">James Ransom</a>
+    </div>
+
   </div>
 
-<%= yield %>
-
-  <div id="footer">
-    Photo taken by <a href="http://jamesransom.com/">James Ransom</a>
-  </div>
+  <%= javascript_tag "application.js" %>
+  <%= javascript_tag "bootstrap.js" %>
+  <%= javascript_tag "jquery.js" %>
 
 </body>
 </html>
